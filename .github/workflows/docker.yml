@@ -14,7 +14,7 @@ jobs:
     env:
       DOCKER_REGISTRY: "hub.docker.com/"
       DOCKER_REPOSITORY: "jayaramrcdac/"
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -37,7 +37,7 @@ jobs:
     env:
       DOCKER_REGISTRY: "docker.io/"
       DOCKER_REPOSITORY: "jayaramrcdac/"
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
