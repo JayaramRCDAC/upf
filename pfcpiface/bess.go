@@ -770,6 +770,7 @@ func (b *bess) clearState() {
 func (b *bess) SetUpfInfo(u *upf, conf *Conf) {
 	var err error
 
+	log.Println("By Jayaram R")
 	log.Println("SetUpfInfo bess")
 
 	b.readQciQosMap(conf)
