@@ -53,7 +53,7 @@ docker-build:
 			--target $$target \
 			$$DOCKER_CACHE_ARG \
 			--tag ${DOCKER_REGISTRY}${DOCKER_REPOSITORY}upf-epc-$$target:${DOCKER_TAG} \
-			--label org.opencontainers.image.source="https://github.com/omec-project/upf-epc" \
+			--label org.opencontainers.image.source="https://github.com/JayaramRCDAC/upf" \
 			--label org.label.schema.version="${VERSION}" \
 			--label org.label.schema.vcs.url="${DOCKER_LABEL_VCS_URL}" \
 			--label org.label.schema.vcs.ref="${DOCKER_LABEL_VCS_REF}" \
