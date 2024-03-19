@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 
 # BESS pre-reqs
 WORKDIR /bess
-RUN git clone https://github.com/omec-project/bess.git . && \
+RUN git clone https://github.com/JayaramRCDAC/bess.git . && \
     git checkout ${BESS_COMMIT} && \
     cp -a protobuf /protobuf
 
