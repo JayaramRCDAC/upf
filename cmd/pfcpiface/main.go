@@ -26,7 +26,7 @@ func init() {
 func main() {
 	// cmdline args
 	flag.Parse()
-
+	log.Info("PFCP UPF - Jayaram R")
 	// Read and parse json startup file.
 	conf, err := pfcpiface.LoadConfigFile(*configPath)
 	if err != nil {
