@@ -147,8 +147,8 @@ spec:
     resources:
       limits:
         hugepages-1Gi: 2Gi
-        cpu: 2
-        memory: 256Mi
+        cpu: 20
+        memory: 2Gi
         intel.com/sriov_vfio_access_net: '1'
         intel.com/sriov_vfio_core_net: '1'
     volumeMounts:
