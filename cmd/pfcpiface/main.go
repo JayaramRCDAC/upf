@@ -21,7 +21,7 @@ func init() {
 	log.SetFormatter(&log.TextFormatter{
 		FullTimestamp: true,
 	})
-	log.Info("UPF by CDAC - Jayaram R @ 28-03-2024, 14:45:00")
+	log.Info("UPF by CDAC - Jayaram R @ 04-04-2024, 10:30:00")
 }
 
 func main() {
