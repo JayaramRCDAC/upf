@@ -35,26 +35,17 @@ jobs:
           make docker-build
           make docker-push
 
-      - name: Build and push "master-latest" Docker image
+      - name: Build and push master-latest image for Haswell CPU
         env:
-          DOCKER_TAG: master-latest
+          DOCKER_TAG: haswell
           CPU: haswell
         run: |
-          docker pull ${DOCKER_REGISTRY}${DOCKER_REPOSITORY}upf-epc-bess:$DOCKER_TAG
-          docker pull ${DOCKER_REGISTRY}${DOCKER_REPOSITORY}upf-epc-pfcpiface:$DOCKER_TAG
           CPU=$CPU make docker-build
-          make docker-push
-  
-      - name: Build and push "master-GIT_SHA" Docker image
-        env:
-          DOCKER_TAG: master-${{ env.GIT_SHA_SHORT }}
-        run: |
-          make docker-build
           make docker-push
 
       - name: Build and push release Docker image for Ivybridge CPU
         env:
-          DOCKER_TAG: rel-${{ needs.tag-github.outputs.version }}-ivybridge
+          DOCKER_TAG: ivybridge
           CPU: ivybridge
         run: |
           CPU=$CPU make docker-build
