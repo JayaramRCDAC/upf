@@ -34,6 +34,7 @@ ipaddrs=(198.18.0.1/30 198.19.0.1/30)
 # MAC addresses of gateway interface(s)
 #
 # In the order of (s1u/n3 sgi/n6)
+# macaddrs=(9e:b2:d3:34:ab:27 c2:9c:55:d4:8a:f6)
 macaddrs=(02:09:c0:ea:d8:1c 02:09:c0:ea:d8:1c)
 
 # Static IP addresses of the neighbors of gateway interface(s)
